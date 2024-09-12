@@ -1,0 +1,1 @@
+default broj = 0
