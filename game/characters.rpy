@@ -1,6 +1,5 @@
-define detective = Character("Detective", color = "#42f5da")
-define detective_name = Character("[name]", color = "#42f5da")
-define femaleChar = Character("Lady", color = "#b94292")
+define player = Character("[name]", color = "#59e73c")
+define mike = Character("Mike", color = "#2d3bbe")
 
 image detective idle = "images/Characters/Detective/detective_idle.png"
 image detective hands over = "images/Characters/Detective/detective_hands_over.png" 

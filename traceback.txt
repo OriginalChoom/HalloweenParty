@@ -1,67 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 388, in script
-    $ __gl_test()
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 388, in script
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 388, in <module>
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 317, in _m1_00gltest__gl_test
-    _gl_performance_test()
-  File "renpy/common/00gltest.rpy", line 340, in _gl_performance_test
-    ui.interact(suppress_underlay=True, suppress_overlay=True)
-OSError: Couldn't find file 'gui/window_icon.png'.
+  File "game/script.rpy", line 25, in script call
+    call act1_scene01
+  File "game/act1.rpy", line 176, in script
+    $ front_door_gone_throught = true
+  File "game/act1.rpy", line 176, in <module>
+    $ front_door_gone_throught = true
+NameError: name 'true' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 635, in main
-    run(restart)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 145, in run
-    renpy.execution.run_context(True)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 388, in script
-    $ __gl_test()
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 388, in script
-    $ __gl_test()
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+  File "game/script.rpy", line 25, in script call
+    call act1_scene01
+  File "game/act1.rpy", line 176, in script
+    $ front_door_gone_throught = true
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\ast.py", line 821, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00gltest.rpy", line 388, in <module>
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 317, in _m1_00gltest__gl_test
-    _gl_performance_test()
-  File "renpy/common/00gltest.rpy", line 340, in _gl_performance_test
-    ui.interact(suppress_underlay=True, suppress_overlay=True)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\display\core.py", line 2122, in interact
-    self.start()
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\display\core.py", line 983, in start
-    self.post_init()
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\display\core.py", line 1080, in post_init
-    self.set_icon()
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\display\core.py", line 1123, in set_icon
-    with renpy.loader.load(icon, directory="images") as f:
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'gui/window_icon.png'.
+  File "game/act1.rpy", line 176, in <module>
+    $ front_door_gone_throught = true
+NameError: name 'true' is not defined
 
 Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.1.24030407
+Ren'Py 8.3.2.24090902
 Halloween Party 1.0
-Thu Sep 12 15:13:07 2024
+Wed Sep 25 14:28:27 2024

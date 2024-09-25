@@ -20,9 +20,10 @@ label splashscreen:
 # The game starts here.
 
 label start:
-
     $ renpy.music.set_volume(0.3, 0.5, channel="music")
     $ renpy.music.set_volume(0.6, 0.7, channel="sound")
     call act1_scene01
+
+    call act2_scene01
 
 
