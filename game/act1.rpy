@@ -86,17 +86,17 @@ label act1_scene02:
 
 #kuca odvojeno
 label act1_scene02_split:
-    scene living_room with dissolve
+    scene living_room_with_stick with dissolve
     player "{i}This looks like a living room. I guess nobody was here fore a long time. {/i}"
     player "{i}Definitaly no party here. Let's check out the other room. {/i}"
-    scene kitchen_room with dissolve
+    scene kitchen_room_with_paper with dissolve
     player "{i}This is the kithcen. Again looks like it hasn't been used in a long time. Maybe we are at the wrong house.  {/i}"
     player "{i}I don't think anybody is here. Definitaly not in the house. There is a door here. Leading into the yard I bet.{/i}"
     player "{i}Let's have a look since we are already here. {/i}"
     scene yard_with_window with dissolve
     player "{i}Nobody is here. We are at the wrong house.{/i}"
     player "{i}And this yard hasn't been touched for a long time too.{/i}"
-    scene kitchen_room with dissolve
+    scene kitchen_room_with_paper with dissolve
     player "{i}This is enough of this house I would say.{/i}"
     player "{i}Let's meet up with Mike and get out of here. {/i}"
     scene front_enterance with dissolve
@@ -130,12 +130,12 @@ label act1_scene02_split:
 
 #kuca zajedno
 label act1_scene02_together:
-    scene living_room with dissolve
+    scene living_room_with_stick with dissolve
     mike "Yeah, definitely a room, just not sure someone is living here. "
     player "It has all the furnature, but looks like it hasn't been used for a long time. "
     mike "I don't hear any music, but they may be in the back. "
     player "Let's check it out. "
-    scene kitchen_room with dissolve
+    scene kitchen_room_with_paper with dissolve
     player "Again, empty, dirty, unsued for over a 100 years. "
     mike "Yep. {w}I'm starting to think we are at the wrong house. {w}"
     mike "There is the back door. "
@@ -319,22 +319,4 @@ label scene2:
         detective_name "Time go to to the Bar."
 
     stop music
-    return
-
-label scene3:
-    window hide
-    scene act1scene3shot01 with dissolve
-    pause
-    detective_name "There it is..." with dissolve
-    detective_name "Time to go inside."
-
-    return
-
-label scene4:
-    window hide
-    scene act1scene4shot01 with dissolve
-    pause
-    detective_name "There it is..." with dissolve
-    detective_name "Time to go inside."
-
     return

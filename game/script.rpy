@@ -22,8 +22,18 @@ label splashscreen:
 label start:
     $ renpy.music.set_volume(0.3, 0.5, channel="music")
     $ renpy.music.set_volume(0.6, 0.7, channel="sound")
+
+    #act1
     call act1_scene01
 
+    #act2
     call act2_scene01
 
+    #act 2 free roam unlocked
+    call act2_front_enterance
+
+    #act 3 call
+    call act3_bedroom
+
+    return 
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/act1.rpy", line 159: end of line expected.
-    scene HalloweenParty/game\images/Int/door_opening/front_enterance_door_open_01 with Dissolve(1)
-                             ^
+File "game/variables.rpy", line 36: invalid syntax
+    = False
+     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Sep 25 14:26:33 2024
+Sun Sep 29 17:56:10 2024

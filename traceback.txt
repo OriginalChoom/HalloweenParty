@@ -1,30 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 25, in script call
-    call act1_scene01
-  File "game/act1.rpy", line 176, in script
-    $ front_door_gone_throught = true
-  File "game/act1.rpy", line 176, in <module>
-    $ front_door_gone_throught = true
-NameError: name 'true' is not defined
+  File "game/script.rpy", line 33, in script call
+    call act2_front_enterance
+  File "game/act2.rpy", line 90, in script
+    call screen kitchen_room_movement
+ScriptError: could not find label 'kitchen_room'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 25, in script call
-    call act1_scene01
-  File "game/act1.rpy", line 176, in script
-    $ front_door_gone_throught = true
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/act1.rpy", line 176, in <module>
-    $ front_door_gone_throught = true
-NameError: name 'true' is not defined
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\execution.py", line 958, in run_context
+    context.run()
+  File "game/script.rpy", line 33, in script call
+    call act2_front_enterance
+  File "game/act2.rpy", line 90, in script
+    call screen kitchen_room_movement
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'kitchen_room'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.2.24090902
 Halloween Party 1.0
-Wed Sep 25 14:28:27 2024
+Sun Sep 29 18:29:52 2024
