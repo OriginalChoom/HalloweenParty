@@ -31,6 +31,10 @@ default seen_ghost_girl = False               #za kasnije da duh zna jesi ju vid
 #counters and stuff
 default times_been_to_living_room = 0
 default seen_outside = 0
+default ghost_clicked = False
+default show_ghost_trigger = False
+default lies_counter = 0
+default win_conditions = 0
 
 #picked up things
 default stick_picked_up = False

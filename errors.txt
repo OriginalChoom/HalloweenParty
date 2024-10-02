@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/variables.rpy", line 36: invalid syntax
-    = False
-     ^
+File "game/screens.rpy", line 303: 'True' is not a keyword argument or valid child of the vbox statement.
+    True action Start()
+        ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sun Sep 29 17:56:10 2024
+Tue Oct  1 01:21:46 2024

@@ -1,5 +1,7 @@
 define player = Character("[name]", color = "#59e73c")
 define mike = Character("Mike", color = "#2d3bbe")
+define ghost_girl = Character("Ghost girl", color = "#94fbff")
+define ghost_man = Character("Ghost man", color = "#c2bfbf")
 
 image detective idle = "images/Characters/Detective/detective_idle.png"
 image detective hands over = "images/Characters/Detective/detective_hands_over.png" 

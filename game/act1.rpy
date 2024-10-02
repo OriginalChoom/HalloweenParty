@@ -6,6 +6,7 @@ label act1_scene01:
     $ name = name.strip()
     if not name:
         $ name = "John"
+    play music "audio/Music/Surface of the Moon - John Patitucci.mp3" fadein 2 fadeout 2
     scene act1_scene01 with dissolve
     mike "I think it's only a couple more minutes to the house. "
     player "I thought you've been to his place before."
@@ -20,7 +21,7 @@ label act1_scene01:
     scene act1_scene03 with dissolve
     mike "So, you think there will be girls at the party."
     player "Well, it better. We didn't come all the way over here to a sausage party. I don’t even know where we are. "
-    scene act1_scene04 with dissolve
+    #scene act1_scene04 with dissolve
     mike "Yeah, my thoughts exactly... We should be here in a sec. House 160, 162, 164, 16-6--- 169 " 
     mike "Hmm, weird, I guess they had a little mix up when they marked the building. "
     player "Just call the guy and ask."
@@ -62,8 +63,10 @@ label act1_scene01:
 
 #Ulazak u kucu
 label act1_scene02:
+    stop music
+    play music "audio/Music/Sloppy Clav - Godmode.mp3" fadein 1 loop
     scene front_enterance with dissolve
-    play sound "door closing"
+    #play sound "door closing"
     player "Holy shit. "
     mike "Looks like nobody is here. Shit's kind of creepy"
     player "Yeah. They are probably in the back. Do you hear anything."
@@ -119,7 +122,7 @@ label act1_scene02_split:
             player "Eh, screw this. I don't know where he is, but I'm not styling here for a second longer. "
             player "{i}Let's get out of here. {/i}"
             "You try the door"
-            #play sound kvaka
+            play sound "Locked Doorknob Jiggle.mp3"
             player "{i}What is this. {w}The door won't open.{w}{/i}"
             player "{i}What is going on...{/i}"
             player "{i}This is crazy. It just locked itself. {w}I got to find a way out of here. {w}{/i}"
@@ -147,11 +150,11 @@ label act1_scene02_together:
     scene front_enterance with dissolve
     mike "Ok, let's get out of here. "
     "Mike tries to open the door"
-    #play sound kvaka
+    play sound "Locked Doorknob Jiggle.mp3"
     mike "The door won't open. "
     scene front_enterance_door with dissolve
     player "Wait... Let me try. "
-    #play sound kvaka
+    play sound "Locked Doorknob Jiggle.mp3"
     player "Yeah, completely shut. "
     mike "What are we going to do now. "
     player "I don't know... "

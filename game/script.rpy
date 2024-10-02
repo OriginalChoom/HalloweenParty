@@ -24,16 +24,18 @@ label start:
     $ renpy.music.set_volume(0.6, 0.7, channel="sound")
 
     #act1
-    call act1_scene01
+    call act1_scene01 from _call_act1_scene01
 
     #act2
-    call act2_scene01
+    call act2_scene01 from _call_act2_scene01
 
     #act 2 free roam unlocked
-    call act2_front_enterance
+    call act2_front_enterance from _call_act2_front_enterance
 
     #act 3 call
-    call act3_bedroom
+    call act3_bedroom from _call_act3_bedroom
+
+    call ending from _call_ending
 
     return 
 

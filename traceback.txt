@@ -1,11 +1,11 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 33, in script call
-    call act2_front_enterance
-  File "game/act2.rpy", line 90, in script
-    call screen kitchen_room_movement
-ScriptError: could not find label 'kitchen_room'.
+After initialization, but before game start.
+  File "game/screens.rpy", line 374, in prepare_screen
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 374, in prepare
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+Exception: A screen named navigation does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -14,19 +14,19 @@ Full traceback:
     renpy.main.main()
   File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 652, in main
     run(restart)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/script.rpy", line 33, in script call
-    call act2_front_enterance
-  File "game/act2.rpy", line 90, in script
-    call screen kitchen_room_movement
-  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'kitchen_room'.
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 374, in prepare_screen
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 374, in prepare
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "F:\PROGRAM FILES 2\Ren Py\renpy-8.2.1-sdk\renpy\sl2\slast.py", line 2030, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named navigation does not exist.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.2.24090902
 Halloween Party 1.0
-Sun Sep 29 18:29:52 2024
+Tue Oct  1 01:40:10 2024

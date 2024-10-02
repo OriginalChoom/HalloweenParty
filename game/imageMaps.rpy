@@ -61,9 +61,13 @@ screen living_room_movement:
         action Jump("act2_kitchen_room")
 
     #ghost show up
-    if times_been_to_living_room > 3 and stick_picked_up == True:
+    if show_ghost_trigger == True:
         imagebutton:
-            pass
+            xpos 796
+            ypos 490
+            idle "ghost_interact_idle"
+            hover "ghost_interact_hover"
+            action SetVariable("ghost_clicked", True), Jump("act2_living_room")
 
     #stick pick up
     if stick_picked_up == False:
