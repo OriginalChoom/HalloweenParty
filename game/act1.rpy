@@ -50,16 +50,12 @@ label act1_scene01:
                 player "I changed my mind. This looks like something out of a horror movie. Maybe we should not go in. "
                 mike "Yeah, I don’t know. Doesn’t look like there are people here. "
                 player "Let’s check the house across the street. Maybe that is where we need to be. "
-                scene act1_scene_endgame
-                pause
-                return 
+                jump end_party
 
     elif not_go_intro_house == 0:
         player "Nah man, that is definitely not the right place. Just look at the other side od the street. You see the light and everything. "
         mike "Yeah, that looks like a party. Has ballons and everything. Let’s go there. "
-        scene act1_scene_endgame
-        pause
-        return 
+        jump end_party 
 
 #Ulazak u kucu
 label act1_scene02:

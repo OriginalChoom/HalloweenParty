@@ -39,3 +39,8 @@ label start:
 
     return 
 
+
+label end_party:
+    scene act1_scene_endgame
+    "Party Ending"
+    $ MainMenu(confirm=False)()

@@ -78,6 +78,14 @@ screen living_room_movement:
             hover "stick_pick_up_hover"
             action SetVariable("stick_picked_up", True), Jump("act2_living_room")
 
+    #sat na zidu
+    imagebutton:
+        xpos 490
+        ypos 202
+        idle "clock_on_wall_idle"
+        hover "clock_on_wall_hover"
+        action Jump("clock_close_up")
+
 
 screen kitchen_room_movement:
     #to living room
@@ -177,3 +185,10 @@ screen outside_window_movement:
         action SetVariable("seen_outside", 1), Jump("act2_kitchen_room")
 
 
+#screen clock_on_wall_living_room:
+#    imagebutton:
+#        xpos 500
+#        ypos 500
+#        idle "clock_on_wall_idle"
+#        hover "clock_on_wall_hover"
+#        action Jump("clock_close_up")
